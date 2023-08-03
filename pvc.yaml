@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    volume.beta.kubernetes.io/storage-provisioner: directpv-min-io
+    volume.kubernetes.io/selected-node: minio-k8s7
+  name: please-remove-me-cesar
+  namespace: directpv
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: directpv-min-io
+  volumeMode: Filesystem

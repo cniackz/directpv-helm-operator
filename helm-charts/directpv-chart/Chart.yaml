@@ -1,0 +1,9 @@
+apiVersion: v2
+appVersion: 4.0.6
+description: A Helm chart for DirectPV
+maintainers:
+- email: dev@min.io
+  name: MinIO
+name: directpv-chart
+type: application
+version: 0.1.0
